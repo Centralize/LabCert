@@ -77,6 +77,7 @@ impl App {
     pub fn page_ui(&mut self, ui: &mut egui::Ui, st: &mut Store, p: &Pal) {
         match self.page {
             Page::Certificates => self.certificates(ui, st, p),
+            Page::Help => self.help_page(ui, st, p),
             _ => {
                 egui::ScrollArea::vertical().auto_shrink([false, false]).id_salt(format!("{:?}", self.page)).show(ui, |ui| {
                     ui.set_width(ui.available_width() - 6.0);
@@ -89,7 +90,7 @@ impl App {
                         Page::Revocation => self.revocation(ui, st, p),
                         Page::Activity => self.activity(ui, st, p),
                         Page::Settings => self.settings_page(ui, st, p),
-                        Page::Certificates => {}
+                        Page::Certificates | Page::Help => {}
                     }
                     ui.add_space(20.0);
                 });

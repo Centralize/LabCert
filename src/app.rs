@@ -20,10 +20,11 @@ pub enum Page {
     Revocation,
     Activity,
     Settings,
+    Help,
 }
 
 impl Page {
-    pub const ALL: [Page; 9] = [
+    pub const ALL: [Page; 10] = [
         Page::Dashboard,
         Page::Authorities,
         Page::Certificates,
@@ -33,6 +34,7 @@ impl Page {
         Page::Revocation,
         Page::Activity,
         Page::Settings,
+        Page::Help,
     ];
     pub fn label(self) -> &'static str {
         match self {
@@ -45,6 +47,7 @@ impl Page {
             Page::Revocation => "Revocation",
             Page::Activity => "Activity log",
             Page::Settings => "Settings",
+            Page::Help => "Help",
         }
     }
     pub fn subtitle(self) -> &'static str {
@@ -58,6 +61,7 @@ impl Page {
             Page::Revocation => "Withdrawn certificates and the lists devices check",
             Page::Activity => "A record of everything that happened",
             Page::Settings => "Defaults, addresses, appearance and backups",
+            Page::Help => "User guide and installation instructions",
         }
     }
     pub fn from_name(s: &str) -> Option<Page> {
@@ -227,6 +231,8 @@ pub struct App {
     pub shot: Arc<Mutex<Option<Arc<egui::ColorImage>>>>,
     pub shot_requested: bool,
     pub last_tick: f64,
+    pub help_tab: usize,
+    pub help_jump: Option<usize>,
 }
 
 impl App {
@@ -267,6 +273,8 @@ impl App {
             shot: Arc::new(Mutex::new(None)),
             shot_requested: false,
             last_tick: 0.0,
+            help_tab: 0,
+            help_jump: None,
             shared,
         };
         if autostart && has_ca && app.screenshot.is_none() {
@@ -664,6 +672,11 @@ fn nav_icon(ui: &egui::Ui, page: Page, r: egui::Rect, col: Color32) {
         }
         Page::Activity => {
             pnt.add(egui::Shape::line(vec![p(0.0, 0.55), p(0.25, 0.55), p(0.4, 0.15), p(0.6, 0.9), p(0.75, 0.55), p(1.0, 0.55)], s));
+        }
+        Page::Help => {
+            pnt.circle_stroke(c, r.width() * 0.48, s);
+            pnt.add(egui::Shape::line(vec![p(0.36, 0.38), p(0.42, 0.25), p(0.58, 0.25), p(0.64, 0.38), p(0.5, 0.52), p(0.5, 0.62)], s));
+            pnt.circle_filled(p(0.5, 0.76), 1.4, col);
         }
         Page::Settings => {
             pnt.circle_stroke(c, r.width() * 0.22, s);

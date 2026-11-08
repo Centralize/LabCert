@@ -4,6 +4,7 @@ mod acme;
 mod app;
 mod ca;
 mod dialogs;
+mod help;
 mod model;
 mod pages;
 mod pages2;
