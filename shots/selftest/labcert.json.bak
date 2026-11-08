@@ -1,0 +1,607 @@
+{
+  "version": 1,
+  "authorities": [
+    {
+      "id": "4bd86f9b6e1f",
+      "name": "Test Root",
+      "parent": null,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIBzzCCAVWgAwIBAgIQPoL558vsssHJFdPIkFH4sTAKBggqhkjOPQQDAzAnMREw\r\nDwYDVQQKDAhIb21lIExhYjESMBAGA1UEAwwJVGVzdCBSb290MB4XDTI2MTEwODA5\r\nNTcyNVoXDTM2MTEwNzEwNTcyNVowJzERMA8GA1UECgwISG9tZSBMYWIxEjAQBgNV\r\nBAMMCVRlc3QgUm9vdDB2MBAGByqGSM49AgEGBSuBBAAiA2IABGbFWYhmwGfPn6SO\r\na0CLSSffTho+c5zqq1kiEX8uWuBIhlow9eCwAxYn7a68bcsdmOWCgs86h2MXKfdQ\r\nzbBrxb8ApkYdZvUzw2gOtVuzMBX0gH/c1V5vP5b4zZFsIzncRKNGMEQwDwYDVR0P\r\nAQH/BAUDAweGADAdBgNVHQ4EFgQU43+WTIATdw5hTnWLfIns8MjIqZAwEgYDVR0T\r\nAQH/BAgwBgEB/wIBATAKBggqhkjOPQQDAwNoADBlAjEAqNklbEBJntOo8U9EZbIE\r\nq8ga1q/5LCOBk/cztmqBDxeB1TtPxGD74CCX+sFmy2htAjA86JS3VNj6cqfIKw9R\r\n8m90SiHYY9pGqPNXEUPRu/pNXxgGjLdTTV5kHz43Mf3NCgc=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIG2AgEAMBAGByqGSM49AgEGBSuBBAAiBIGeMIGbAgEBBDBnyZvPjpSb9jmfTNLV\r\nJ3vW4G3jZHTu7h7WbReAeYbv7QSYYhC5eezeYlEDJAc5BwihZANiAARmxVmIZsBn\r\nz5+kjmtAi0kn304aPnOc6qtZIhF/LlrgSIZaMPXgsAMWJ+2uvG3LHZjlgoLPOodj\r\nFyn3UM2wa8W/AKZGHWb1M8NoDrVbszAV9IB/3NVebz+W+M2RbCM53EQ=\r\n-----END PRIVATE KEY-----\r\n",
+      "key_type": "EcdsaP384",
+      "subject": "O=Home Lab, CN=Test Root",
+      "serial": "3e82f9e7cbecb2c1c915d3c89051f8b1",
+      "not_before": 1794131845,
+      "not_after": 2109668245,
+      "created": 1794135445,
+      "imported": false,
+      "path_len": 1,
+      "crl_number": 1,
+      "crl_pem": "-----BEGIN X509 CRL-----\r\nMIIBATCBhwIBATAKBggqhkjOPQQDAzAnMREwDwYDVQQKDAhIb21lIExhYjESMBAG\r\nA1UEAwwJVGVzdCBSb290Fw0yNjExMDgxMDU2MjVaFw0yNjExMTUxMDU3MjVaoC8w\r\nLTAfBgNVHSMEGDAWgBTjf5ZMgBN3DmFOdYt8iezwyMipkDAKBgNVHRQEAwIBATAK\r\nBggqhkjOPQQDAwNpADBmAjEAnOTxhsW23V8xP7J/gSgJ756dCy8OB/wLSVu4Fob4\r\nbshkhoY/GfXY9NMTkTyLtQs9AjEA/O3ZEwqEnPF6Qu7tRZ2fWmrGAX+Lfnca6iV/\r\nJiq2CFQp2NduvTyb1Ez8Cngmcy2W\r\n-----END X509 CRL-----\r\n",
+      "crl_this_update": 1794135385,
+      "crl_next_update": 1794740245,
+      "fingerprint": "BA:56:B1:12:3C:59:5A:A8:B1:D1:16:4F:F2:7E:4E:D5:85:8E:CE:42:87:CC:8E:85:02:E7:86:1B:2F:44:17:A1",
+      "notes": "",
+      "self_signed": true,
+      "revoked": null
+    },
+    {
+      "id": "7081f2d6a281",
+      "name": "Test Issuing",
+      "parent": "4bd86f9b6e1f",
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIC4DCCAmegAwIBAgIQN1wiXoAfOKdoUYAyzrhlPTAKBggqhkjOPQQDAzAnMREw\r\nDwYDVQQKDAhIb21lIExhYjESMBAGA1UEAwwJVGVzdCBSb290MB4XDTI2MTEwODA5\r\nNTcyNVoXDTMxMTEwODEwNTcyNVowKjERMA8GA1UECgwISG9tZSBMYWIxFTATBgNV\r\nBAMMDFRlc3QgSXNzdWluZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB\r\nAMROTGvBh9jwH4FiDNruu1ttJslVGvaLPWkzDhYyNsb90vtQpyzZa7bPp1foFCgA\r\n/3HVxejEVBJ1KjDOB1lLO2GwvwVaWRwxp/sYC8loTHEOXk9+VhGovjsVkxqSSX/5\r\n6H6+ZtplDEI/S+stcAMJtITl+pvqGkFzkM+O7G8CPCbCCqwFV2qVOAtUigs6VuOY\r\n8aph3WXZew7T4ceQMPeE/STX6Xsi0MKpmY///xr6FH5BeIxe8BZTVByXb9mzrkVL\r\nGPKSWafX+qjZLSLrP8rkuib8tEu8x3nU36q9PZ3Cbje5NDF1SSxOG8DZH4WzPcLE\r\n/VEWjmYpMmrvnrbFV3OeIHcCAwEAAaOBpjCBozAfBgNVHSMEGDAWgBTjf5ZMgBN3\r\nDmFOdYt8iezwyMipkDAPBgNVHQ8BAf8EBQMDB4YAMDwGA1UdHwQ1MDMwMaAvoC2G\r\nK2h0dHA6Ly8xMjcuMC4wLjE6MTg0ODAvY3JsLzRiZDg2ZjliNmUxZi5jcmwwHQYD\r\nVR0OBBYEFN7CEn8c7Hd0o+20HhqMimlDnPz0MBIGA1UdEwEB/wQIMAYBAf8CAQAw\r\nCgYIKoZIzj0EAwMDZwAwZAIwCGDIeqSdfV+vRq5/G7aFqOVNJ72H6caP6oFQOpd+\r\nfzMl/WoTHl/yO5hy0Pdtk7oTAjAj9ekqs1/EwoyIsTC1C/xcUkTlEUJYkRb9OnMa\r\nBo/8hK+ImlLV82245jvOIg3L7T0=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDETkxrwYfY8B+B\r\nYgza7rtbbSbJVRr2iz1pMw4WMjbG/dL7UKcs2Wu2z6dX6BQoAP9x1cXoxFQSdSow\r\nzgdZSzthsL8FWlkcMaf7GAvJaExxDl5PflYRqL47FZMakkl/+eh+vmbaZQxCP0vr\r\nLXADCbSE5fqb6hpBc5DPjuxvAjwmwgqsBVdqlTgLVIoLOlbjmPGqYd1l2XsO0+HH\r\nkDD3hP0k1+l7ItDCqZmP//8a+hR+QXiMXvAWU1Qcl2/Zs65FSxjyklmn1/qo2S0i\r\n6z/K5Lom/LRLvMd51N+qvT2dwm43uTQxdUksThvA2R+Fsz3CxP1RFo5mKTJq7562\r\nxVdzniB3AgMBAAECggEAcT0tjldkcvsJYYxbGAvw3iuX3ToPxLrLoRzHenxa5u1S\r\nwJBk71U4cotU4DvLLMxujo8fjEd8q+0UenTO/m6Mga0AdCkLEF2ApjLX0cYtmmYM\r\nd1TMd4Fcwx6N7h0G8yEJQdu53y+9I5X5yF88pzP5A1Ta/QfNP4ZXubObpemnIz92\r\naNQut0ElbNIKso8AjmGQteW+eRMreiQ/tWwcAMQKF+tOE/yTocUo6kpwRgfnls57\r\niGBoaqQ9AWqRMLSmx8xERgjVlg33cByfuK9at/IDwWq2md2k9/4rXPBgyHLVLYgG\r\nicDISUunhobeynarL7gJMjeewFSQuCxQCDHsZxW6uQKBgQDNneVZm3YaNrDlxpyg\r\nxtgBo2Og0t+a01edj8jcargN0Q+jl6BHhj47zRkpTnHzuBDsxqpap95hOFI5SJOk\r\nmr1MFdZUhLIDiZUFLqf20HTN/nRQjpETkiGse5YL1gg5SVKnAji+cD3olwwXs57R\r\n4YTYZt2dnJYqmhusLilFxBivLQKBgQD0aFa/5nUXP7Vdvp8xjkrHjOXzgMv5bWaS\r\nQYR1OwUNT+m8/EhgoZagFEl8lH7hb0aZSFYpfDZXT1h83iH8FFGue5vZzn/qcfee\r\nLx09UoRf7eayivUsGLR/Z4x1bfc8IIJNDx3dyaQGX+/lM7WfGrZ4t+riePvF7g+H\r\nfCFBZfC0swKBgQCfxD+Ql+51wedEM0ZC2x6+byGbth7O48bhg/bT5gxrl/Vp7Qg6\r\na0HyH5ScdvquIGjuQhPeay+tJSEmp5EpRp8t/o3SkGTtwLrNEwqqCiGoaj4g1hY+\r\nOb72kfTt73nmYWXapSxINVi1YKChzgzrEiuyJoOu0xwPsD0uVZP2RL/VZQKBgQDj\r\nNUA4I8kEdPBpFrWtfwdbnUuEZF67IQ3ytz+pL9XRe1Hio3Gxi2aYqGNskiul7Sln\r\nhAy9gkCOSDAN3P8g9c69cyH+iG74BzzX7Bq1kEmJWINXxcCIXuslaaD05eaqGdqo\r\nQn5UWYjHeFZu7/RO1al+bhPIuAnvBhGftTDBOEBd6wKBgCNjvZI3z5+K8izT6z2r\r\n4H6CmTNImvRWcyDsVVO3ozldu7GwOtI/x4ziz9m76unO9WLrY5nL7HmLVbmDc1YT\r\ngoIuowj9l+xRVVoxqoZniSw/yor3yB0/YbXC76luKUwiWCrKjrAs1cPnxJ3NNqi6\r\nTG+n7ikdRtXhg1Q4aZU6stsS\r\n-----END PRIVATE KEY-----\r\n",
+      "key_type": "Rsa2048",
+      "subject": "O=Home Lab, CN=Test Issuing",
+      "serial": "375c225e801f38a768518032ceb8653d",
+      "not_before": 1794131845,
+      "not_after": 1951901845,
+      "created": 1794135445,
+      "imported": false,
+      "path_len": 0,
+      "crl_number": 6,
+      "crl_pem": "-----BEGIN X509 CRL-----\r\nMIICOzCCASMCAQEwDQYJKoZIhvcNAQELBQAwKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDFRlc3QgSXNzdWluZxcNMjYxMTA4MTA1NjI4WhcNMjYxMTE1MTA1\r\nNzI4WjCBkzAvAhBU5lFv8Hzg8vPpxOU8XadMFw0yNjExMDgxMDU3MjhaMAwwCgYD\r\nVR0VBAMKAQQwLwIQd2Me89PuSh4DIgMUYdOJMxcNMjYxMTA4MTA1NzI4WjAMMAoG\r\nA1UdFQQDCgEBMC8CEF4Qovcb0X7MVHEsAtNarK4XDTI2MTEwODEwNTcyOFowDDAK\r\nBgNVHRUEAwoBBKAvMC0wHwYDVR0jBBgwFoAU3sISfxzsd3Sj7bQeGoyKaUOc/PQw\r\nCgYDVR0UBAMCAQYwDQYJKoZIhvcNAQELBQADggEBAFvwlKPQiotIL9BynpUaLavE\r\nmLKmJP9wPluNWstDekbdw6RlNA3i2Efb7kxWz4AamLOMi2J36IfAssqGLHiHA5Sg\r\njF1q+ioRh4afXZqbBMv0XShxlA3FoWBVKL5hFNf5iFos7bkj2VfJMBZdjWXNEGNM\r\nLcgoJ+3n8uGVXTRzf+cEO/cyjmiwWvGaY5uVzjKFemOc/hudRyP4MogXw40hkmc8\r\nFxijlr/fzURrvhGvdLD5oT2NQsT/MGs4IwVXE1FeKo0vh8YMMlIuHYp/3iKCBVIU\r\nxb4YObuECvN9+Nsx9v4hqnyQ9M3DJvXFJy/qp3mNnvU/j3GE+QS4gRRjLOq/+Lg=\r\n-----END X509 CRL-----\r\n",
+      "crl_this_update": 1794135388,
+      "crl_next_update": 1794740248,
+      "fingerprint": "D7:10:FC:31:62:32:C7:C6:97:B1:E0:4F:5F:AB:7F:27:DD:EA:5C:25:E9:6B:0F:3C:98:EC:91:C3:9B:E1:D8:45",
+      "notes": "",
+      "self_signed": false,
+      "revoked": null
+    }
+  ],
+  "certs": [
+    {
+      "id": "3a8ad644753c4176",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "54e6516ff07ce0f2f3e9c4e53c5da74c",
+      "not_before": 1794135145,
+      "not_after": 1825671445,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIC9zCCAd+gAwIBAgIQVOZRb/B84PLz6cTlPF2nTDANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyNVoXDTI3MTEwODEwNTcyNVowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA\r\nBMlHwzY/Yqfyjo2aBA5Vyb51umdYJIJvoxMMnM+DoSNYBntp6AFhJ9WhuQf1Oh5U\r\ndJzH7u4nDXWT4Rdj73jw7gWjgeMwgeAwHwYDVR0jBBgwFoAU3sISfxzsd3Sj7bQe\r\nGoyKaUOc/PQwKQYDVR0RBCIwIIIMd2ViLnRlc3QubGFuhwTAqAEFggoqLnRlc3Qu\r\nbGFuMA8GA1UdDwEB/wQFAwMHgAAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwPAYDVR0f\r\nBDUwMzAxoC+gLYYraHR0cDovLzEyNy4wLjAuMToxODQ4MC9jcmwvNzA4MWYyZDZh\r\nMjgxLmNybDAdBgNVHQ4EFgQU3/eVrLr0FstV8s2VcKn3a5tY1b8wDwYDVR0TAQH/\r\nBAUwAwEBADANBgkqhkiG9w0BAQsFAAOCAQEAPf12Csx9kF/M20vI+2/eck9S5vh7\r\nCSa5E/DkEqWO/EVmu2V/8U30h4Oj0xUe3HJn9M0aJXczN1oMM6dg0jXSWFHmDDf+\r\njYKNt9jyVxqleAsbdWizPWH36YuAGTWWWB7rttsQkbudHVDP7TS5nGot+NClrqJr\r\nsFLEvAZrnihPVxk94ropKPDr/YPnexPb3UPpG3HUQHCL1Bdi+1XAHptk84z/4p1E\r\nRyW9lP0lHDp8ykSn6gTlPNcryHZz3+sGgzQ9S/nq2vSsalpgSFt/Us3mVbQDJkh+\r\n6LbVGCvDd2Xzk2E0E/sjIbp5exKiCXN2Ih+W2oB90bcgzUtfNJKHAVD/Zg==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgtFeeHR5VU3ec2m7U\r\njFNdOTUSiXrB7LNJUTAMg3R2jQehRANCAATJR8M2P2Kn8o6NmgQOVcm+dbpnWCSC\r\nb6MTDJzPg6EjWAZ7aegBYSfVobkH9ToeVHScx+7uJw11k+EXY+948O4F\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135445,
+      "revoked": {
+        "at": 1794135448,
+        "reason": "Superseded"
+      },
+      "renewed_by": "5a1ec454450b8dfb",
+      "fingerprint": "C7:8F:0F:E8:98:6B:DC:7C:D0:17:FC:45:50:28:26:7B:CE:53:92:12:6A:58:7C:95:BD:A8:4D:06:19:5D:FC:E1",
+      "notes": ""
+    },
+    {
+      "id": "438a672204c02d34",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP384",
+      "serial": "723321439c16d715f8866a49696d371b",
+      "not_before": 1794135145,
+      "not_after": 1825671445,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIDFDCCAfygAwIBAgIQcjMhQ5wW1xX4hmpJaW03GzANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyNVoXDTI3MTEwODEwNTcyNVowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjB2MBAGByqGSM49AgEGBSuBBAAiA2IABI3O\r\n4XwwS5Tp1Wf74Al8XvudegfBlG1USaAzyeASTNpQFZGl5KXEKoipXm5Kbe1INM7E\r\nzeAv/zcfI+7/o6LIMDMLoCCJQDhWpY5Pqs/ZX+SL5KHO1w7tLRG8uGGehsf0fKOB\r\n4zCB4DAfBgNVHSMEGDAWgBTewhJ/HOx3dKPttB4ajIppQ5z89DApBgNVHREEIjAg\r\nggx3ZWIudGVzdC5sYW6HBMCoAQWCCioudGVzdC5sYW4wDwYDVR0PAQH/BAUDAweA\r\nADATBgNVHSUEDDAKBggrBgEFBQcDATA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8v\r\nMTI3LjAuMC4xOjE4NDgwL2NybC83MDgxZjJkNmEyODEuY3JsMB0GA1UdDgQWBBSB\r\nJaEVWwb/DzTuDG3UnMLisFucSjAPBgNVHRMBAf8EBTADAQEAMA0GCSqGSIb3DQEB\r\nCwUAA4IBAQCC+nBXmlGWZpEYQ7CyYHTRSZ6Zi2ISrpi78SS3hc39s3g5ICEyQFf3\r\nswoVZteJoCPWuc3Q/zk9ett4+PsJ35NLPGhCyyKRq8uBBQlPN3izi8Kcotw+BpsQ\r\nlaYwXm6tPtQZi2IuN59BVGpbEoL1f19BRtiwF/H5C7JGi8e9Os8PI8oXnU7DBRon\r\nmjfx+h/qR2coVEsFffmKGf24/MHRUmAZgarjB6KIimGnKQCVtJWKvv1y32Fe76ze\r\nqSf5oDdvVloXhrMIKP/idZUj1WSqwGkdnNHHuVc5x7RUwk7X6tRugPmhLwuUULvR\r\nLKRCcXHiKeSvo8zTLUm9jkmaMFo2OXYf\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIG2AgEAMBAGByqGSM49AgEGBSuBBAAiBIGeMIGbAgEBBDDS43mhmqd4zNjlFWgc\r\nO3+uwSpc4r3/L+cm8G4Xn/4a6HU3X037+WuwAVBxJOSaoI+hZANiAASNzuF8MEuU\r\n6dVn++AJfF77nXoHwZRtVEmgM8ngEkzaUBWRpeSlxCqIqV5uSm3tSDTOxM3gL/83\r\nHyPu/6OiyDAzC6AgiUA4VqWOT6rP2V/ki+ShztcO7S0RvLhhnobH9Hw=\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135445,
+      "revoked": null,
+      "renewed_by": "2e6ba8f6ddf29cbc",
+      "fingerprint": "C5:1E:84:A7:F6:14:B6:8E:8A:C9:AC:40:07:EA:AD:D7:07:68:86:88:97:47:D4:E0:3A:36:B2:D4:58:49:7E:2C",
+      "notes": ""
+    },
+    {
+      "id": "792aba02670d076a",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "Rsa2048",
+      "serial": "327b312b0aa67179226717dfc22ec78f",
+      "not_before": 1794135146,
+      "not_after": 1825671446,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIDwjCCAqqgAwIBAgIQMnsxKwqmcXkiZxffwi7HjzANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyNloXDTI3MTEwODEwNTcyNlowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC\r\nAQoCggEBAKpCBSeGxmhaporaBuVU0vX1gaQxhIRBz5e15jpmoP7EmL3Pv1ThbmvT\r\n+z5GwejdKjmVTol+utM553xdKcDjLuD7uD9bZi78SzYg8Pr4EQLdgVpFwFnD/m3y\r\nJBzhbVf1p16Kfz9EEfPmzB6tFGkdoYX3nnaBUpH+96zUrQlkmST2XowWWlbDnhia\r\n3uvaqr0tI9w08n3i+dPufQjLMFy378fFD3VGVzTCvxK++CVjEdgqH5NU7Anx8Tbu\r\n0JGRYIqiIW1euRZKLhjL2k2Y89tOQxO4MlzQPSkQ3mqWOYFcNYRGVsvIszOms69I\r\nkU5LH0gry3EGqcU6QMLqdiZkToziGgcCAwEAAaOB4zCB4DAfBgNVHSMEGDAWgBTe\r\nwhJ/HOx3dKPttB4ajIppQ5z89DApBgNVHREEIjAgggx3ZWIudGVzdC5sYW6HBMCo\r\nAQWCCioudGVzdC5sYW4wDwYDVR0PAQH/BAUDAwegADATBgNVHSUEDDAKBggrBgEF\r\nBQcDATA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vMTI3LjAuMC4xOjE4NDgwL2Ny\r\nbC83MDgxZjJkNmEyODEuY3JsMB0GA1UdDgQWBBR6PQ2lCWK2RoC18Y/E1DN/7KjD\r\n9jAPBgNVHRMBAf8EBTADAQEAMA0GCSqGSIb3DQEBCwUAA4IBAQA9vLjpHKYCNZ+3\r\nKsA0EddymtoahFmt4qBWvJw5WmGbY+lV0af7LxLMGEwfhk+xENEZNIRynPnppdsG\r\nAXh/HoFazfYcm0MQy+e7I+dOhJ9w1hj2gaEMd7FCRfQ1Sn1wmADsdccwOfaQZjnR\r\nTFjjAK3hX1jLKQhZ6+MfUeFituAvWkhnHQSozT9S8AX5tih3FxQLKGBHovV/Z2jI\r\narWZyxxhx+nMwjlPQ3bvUZWLNMB1NYBk80gjo8Hu0bnTvEEnbB531kexdz4Im1nO\r\nNxYHidLXXvSty/2Y4n4WP9EWdGy2qPzqhA0Ugs+YCGsrOMKPKfko2oFysxALL7te\r\nYG/c0GXz\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqQgUnhsZoWqaK\r\n2gblVNL19YGkMYSEQc+XteY6ZqD+xJi9z79U4W5r0/s+RsHo3So5lU6JfrrTOed8\r\nXSnA4y7g+7g/W2Yu/Es2IPD6+BEC3YFaRcBZw/5t8iQc4W1X9adein8/RBHz5swe\r\nrRRpHaGF9552gVKR/ves1K0JZJkk9l6MFlpWw54Ymt7r2qq9LSPcNPJ94vnT7n0I\r\nyzBct+/HxQ91Rlc0wr8SvvglYxHYKh+TVOwJ8fE27tCRkWCKoiFtXrkWSi4Yy9pN\r\nmPPbTkMTuDJc0D0pEN5qljmBXDWERlbLyLMzprOvSJFOSx9IK8txBqnFOkDC6nYm\r\nZE6M4hoHAgMBAAECggEAfMl6wae0kBOw8SAv4bI0FPXmGRP6Dn21y3oUzkUeRtyN\r\nHsG/eFTp+7oY8WInCafgJOhb8cai4+IS2kHmMmvQljGorzcsQ8/CyF+IgEmFHlZ/\r\nUkzBWImgV7Eb6tcGr2trSo20Cgi4J83HWcx9ozWGh4wf5reOb1cy7MfMM5A59q4x\r\n/pXeCIY3+T6eQ6Dv/kEMyNyXUxbVYbQvJcKpyPmx9IsYyE32T/JG6dTS3UzhhbSK\r\n/v40p9n4jFjJRofzuOOi1QBPHaEVZ6gtqnPFkzOqM8YUCFlKVkMo8BzslL4i+WS/\r\nor4aSGnGvdQbQ7eT3Tf0IYaWffwoYFKOWyi3BJohEQKBgQDZiC4rzYwFEskfZnuf\r\nLYk/kimL1kHjnmljIbDodhNYOs0Unw007chGBxHH3lNIudicafbJk0hxd3hSedbX\r\ny6Afvrqp1xHnL0YAWVWRYimOzZGxSKhQHEVGv6rlo/Q2YdJXA28uDXk1PyulhXBz\r\nbLYKNGDlWLju6SiUzN4HRtnTtQKBgQDIXbXz5esNTk8PL5dI4GuKyPy+ZEYAiUVa\r\n6bnOwFj16h+tj7hFxclqPVFCulSpEvHdRrdti8j+nGtS5RoaOlkPoa8XU68shuVy\r\nKbjAhimGeYwTcovJnxgmhmbfq+72v5SkfXBV+BkYy3JIuOzLRq5WPlPtLmbUdEcP\r\n8+/74qFESwKBgQCsX7kWhL6blpNBCpiTPiYv9cZuRM3ZbMHeB+iDjG0v0QiJeq+g\r\nbXvx4dA5LPeZ/YqkB2PDv638G8uAr4OLZJPyE9UemIpbQ56Y0DF6DusXedYlQYn+\r\nUSikM2Vcq1rtbP6cbOBBAfQ2OWSAuQiurkpiM7dEhdWlm6TIpL6bzYz2sQKBgDto\r\nBXWd+rYEPM6M1rcFyvzoIH+2rUalbInK+ItDXlzzIJdOIF2XieNU8M3u/wDuHAX2\r\nXJY/NsW+zNdUFAwotpU64/XvmuWBzW+uzRdP7+nuCckOUkHiSL/LY573lC9WmBS5\r\nGGB04cQHNgg3xAV1HGV3r1yIQHbHTvZ85e9xv0zHAoGBAIKMBtbvn1uzCClZJSPl\r\npx+Ww9DuXYSKzcSUhPGNu4+F5RKcLKurICabDzab3G8/R7xUvU8aVrDNYdjMw/bj\r\nFxTrWKw7H0wo8uSQnGZ8sFLPC5XyIFptD2J2kxJ2Zzx6hTx7VMRWkPMqPCd9qyOM\r\neENaU05utIa+KYyIZ+pUmKmG\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135446,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "84:49:DE:AC:21:5C:79:71:6D:94:56:3F:DB:ED:3C:8A:DD:97:E8:04:D7:9E:E8:4F:48:0C:6A:62:70:9B:77:23",
+      "notes": ""
+    },
+    {
+      "id": "560e988dfb72892e",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "Rsa3072",
+      "serial": "77631ef3d3ee4a1e0322031461d38933",
+      "not_before": 1794135146,
+      "not_after": 1825671446,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIEQjCCAyqgAwIBAgIQd2Me89PuSh4DIgMUYdOJMzANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyNloXDTI3MTEwODEwNTcyNlowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCC\r\nAYoCggGBANQSi0i8zuBkb222//WiBk8sxt3kOl9mfcaV+NK9jh4AdWR7VesnCqt9\r\nJGDx4+1Aqo3Gl37mtkZ8wFGtfCyPDN1SZjmhaMdt6ugPqgu7/4TMvkP5zanBKyCT\r\nJz0DZTL21Q/eKsMPv5kakRq/rez4kH2WXnD23zmfb16xtrkm3lFTTcOr8xtXFi0B\r\no0hiP7VXt7AbOdqS1qyAqlO00BcrglqH1ZfMbknz7OS0bKmGJ+/E7JuKfq4++5P0\r\nSiKQSeO9kJfXoLOdXtDACAStylsBaB71i6WJfCCau9pJe2gO+ZCjslVtbomFoTU2\r\nJ1zp7+rd/xGjpvQCDcaAsvDae2b6MaLEDZymE6mQKlW00LuBCy5dL0OtlrDcd4iU\r\ncYbGoyT05NjT8G/zut9v1s7B6aWryyzfVPZGgLgAoyEQKD/RFle0/8YAzCeYwJXh\r\nYBiavqljFbxgEnKFL4mP/oC62NrlNMwh71P19KRmhDZkQZjCLLyg9vwOIGcGWwTn\r\nd6mSzX1JSwIDAQABo4HjMIHgMB8GA1UdIwQYMBaAFN7CEn8c7Hd0o+20HhqMimlD\r\nnPz0MCkGA1UdEQQiMCCCDHdlYi50ZXN0LmxhbocEwKgBBYIKKi50ZXN0LmxhbjAP\r\nBgNVHQ8BAf8EBQMDB6AAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMDwGA1UdHwQ1MDMw\r\nMaAvoC2GK2h0dHA6Ly8xMjcuMC4wLjE6MTg0ODAvY3JsLzcwODFmMmQ2YTI4MS5j\r\ncmwwHQYDVR0OBBYEFDe2NPt9l/K2zWAb23d8g7yf9d4iMA8GA1UdEwEB/wQFMAMB\r\nAQAwDQYJKoZIhvcNAQELBQADggEBAEiVtH7cgf9YJ7ClRQvLI6fUAdiC2z9HCDRI\r\nK2l9H7ufcRCw6ff/7YMD/GxyzXWemfQsBMi5qDxi9OcsojvYVZgWcTS23tJUdsBS\r\nFpKQQZLc6LSu6veBjB9OVw2kvBtFIRDB0TBQy3wqvM9AdVOs6TwxzTfP5KsEf+BC\r\nNx56oqw6vs1C8LKRtJMQdOBo6ZABQe4Jbh2GJMK/Z2dPt0OjtFxOSRX4yq2/wejE\r\nntUFt7BI5pYBklpD+wofhhsnK8kWjandcK7nNLIZVHGDR3kXUhpgbbT0dADBTDzU\r\noOKwbdYNJsrbtEXwRydXAPgF+I7xPsaa3m0TUImjgNzLnj1xZ2c=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\n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\r\nlENTOBzhvi+Idu4ZtENk9FWC\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135446,
+      "revoked": {
+        "at": 1794135448,
+        "reason": "KeyCompromise"
+      },
+      "renewed_by": null,
+      "fingerprint": "AF:C6:C4:4F:62:9B:10:6A:92:F5:03:D1:50:6D:3C:37:03:BC:FA:10:30:D1:36:D3:31:97:A6:C9:E1:3A:4E:07",
+      "notes": ""
+    },
+    {
+      "id": "006270656d613c22",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "Rsa4096",
+      "serial": "7dc5161bb247a9baa1f295105a429f5f",
+      "not_before": 1794135148,
+      "not_after": 1825671448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIEwjCCA6qgAwIBAgIQfcUWG7JHqbqh8pUQWkKfXzANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI3MTEwODEwNTcyOFowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCC\r\nAgoCggIBANUm66GdQNz095W2wvnJ6DJiM/wOpeNAqYTPpUNBpJCAljKmaHQ0F5yA\r\nmJ5vKGagiA0wOQRKkc85cJ5BVbmE2d3JOkUsUOip9+M12msE1PFpNmghfzcwpwPL\r\neXowyP8KR+pw3W7U0Mh2ReBWcFOjAu0hoft9JBWQ5u3bIeC6AWaqNhq03NgcNerF\r\nXw60jJPClBes3VlOEEPdnmKbAkeq4wc8roZDYC+VpDOXFJOw+YRA9EIgUB9Pabyg\r\njUcysbZv0D9bnBBiK+/pWf04XpUQso5JtcSyIozMxTetyzuCu9kF6BBmQtckYUen\r\nbVT3yfaqSJWHhmNQpkPyBPNnzrrJBMN+oiZoLLgewigk5Ly6R0YVHdn6Swlff5AG\r\nS66jqbjxxsRWGZHmJ/du708Cv4WgndM4CaBjbTyXzp+ODoOHMq20xufxaj5z8U0T\r\nt2tw+cZ0JCN8CS28jb4p5kpymuFuANkHrdcn2JVRLFKYJKWpm4RUPnJBk56MQB6Q\r\n3AzdF68Smxlavg5cuRad2mPtZ2U7TO4ZFrWhpBAIerf3Fdy8F1WvTzFZQH93787I\r\nrcUGD1+okPSqd92tMDTVnfFCfv6JgLD+xatVPwjJCXqkPFyHd2NwOmAcxuflrtJd\r\nNYtU4NFlOPXIyfWZUnd/EUoz+R1ithrghj31CrVSgQtS1QL5xGZJAgMBAAGjgeMw\r\ngeAwHwYDVR0jBBgwFoAU3sISfxzsd3Sj7bQeGoyKaUOc/PQwKQYDVR0RBCIwIIIM\r\nd2ViLnRlc3QubGFuhwTAqAEFggoqLnRlc3QubGFuMA8GA1UdDwEB/wQFAwMHoAAw\r\nEwYDVR0lBAwwCgYIKwYBBQUHAwEwPAYDVR0fBDUwMzAxoC+gLYYraHR0cDovLzEy\r\nNy4wLjAuMToxODQ4MC9jcmwvNzA4MWYyZDZhMjgxLmNybDAdBgNVHQ4EFgQUu19x\r\nSqtCOvetfT3KcHWzXW0HoJ4wDwYDVR0TAQH/BAUwAwEBADANBgkqhkiG9w0BAQsF\r\nAAOCAQEAL4knvtUdlwpgyxumCcH6A3kXBgTgyQt3UXM/RG5dwMSj8nHhb+tu8f4m\r\ngDoUrV4oGSTint0utGhM7j0OxLWfRoSCh7gd6ckMB3xye5sGNEaAArUYkg93QE83\r\nynjRYzeOXfJ1/VO6APUj7oVzEcCd1pqpTPKpq24+l6g0CtesTzGcrJUGA0r9RIQ7\r\n6MufVXi/iMPJm0fd/fKV1UfkY2MynGzNE5zRAelKQectg77+C7CT7cWxgeD8Djtk\r\nVXhW+3x//5+pDxHLVqO9pbsNPNKM/AjBRimbde6DHQ7Uqp6IBNHNugmBMY9UsexR\r\nWF7WanYcBpfU3oTBW2jhDeI7Fnrrhg==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\n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\r\nkB5jzq/kfEPxX4rddWGbU7TNlwh9/Tc=\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "0B:A7:69:0C:49:B5:6B:B1:9B:48:B7:10:42:8B:24:36:F7:6D:EC:E9:FC:D8:96:13:18:8E:10:FC:8C:BB:CE:48",
+      "notes": ""
+    },
+    {
+      "id": "0f251ab1786deb4e",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "Ed25519",
+      "serial": "7a5640fd28bb595ff05220365de3441f",
+      "not_before": 1794135148,
+      "not_after": 1825671448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIICyDCCAbCgAwIBAgIQelZA/Si7WV/wUiA2XeNEHzANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI3MTEwODEwNTcyOFowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjAqMAUGAytlcAMhAMfiYAdgucyhuMye/q3T\r\nUgbWsazEbryRc2IPykzyi7Fto4HjMIHgMB8GA1UdIwQYMBaAFN7CEn8c7Hd0o+20\r\nHhqMimlDnPz0MCkGA1UdEQQiMCCCDHdlYi50ZXN0LmxhbocEwKgBBYIKKi50ZXN0\r\nLmxhbjAPBgNVHQ8BAf8EBQMDB4AAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMDwGA1Ud\r\nHwQ1MDMwMaAvoC2GK2h0dHA6Ly8xMjcuMC4wLjE6MTg0ODAvY3JsLzcwODFmMmQ2\r\nYTI4MS5jcmwwHQYDVR0OBBYEFHz6rvubT1GcSVqIuCmpK1XEpCexMA8GA1UdEwEB\r\n/wQFMAMBAQAwDQYJKoZIhvcNAQELBQADggEBAATmV8yekeK2AHw5mkVxFgvNTSUU\r\nJsILIuOiUIWV/f1jeLGLW4tfHJijRS4AhQ9Q4PUi68oFaU42IBFEm9H44M3kPu0A\r\n0VUFN26rn5r29pu6JvFHNeWu/5g+7Kns9Y6/G2EuftHfP2JWHjUyHxByRF3EZI37\r\nKcq788ikyJultIRCOM6okD/3GeTosGKDwr6v+H97P9rodAC6YSKzI05RtoarlwOr\r\nPyvN7Ingo1nknyBdlUXJzjH/0Ot7lrYROrLAbEIT520GGeDNNo0jDE+nhF0isqip\r\nnwKQIl622VBAsF2O4pBpDBDH7R7ZK3yyHk+1+jLezTOCSupQyXZopz/6m2o=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMFECAQEwBQYDK2VwBCIEINJ5g0GXFBRPczPGjSSNCV2Cpr185gKGPZUu2dt92Nly\r\ngSEAx+JgB2C5zKG4zJ7+rdNSBtaxrMRuvJFzYg/KTPKLsW0=\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "1F:CD:25:ED:77:5A:A3:75:6E:8B:75:4D:3B:09:9F:90:FB:E5:92:E5:8B:BD:BA:0D:29:E8:35:2E:E2:B5:69:0D",
+      "notes": ""
+    },
+    {
+      "id": "5a1ec454450b8dfb",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "37bdcee63e7cf573109dd1fb9e9c3f5a",
+      "not_before": 1794135148,
+      "not_after": 1825671448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIC9zCCAd+gAwIBAgIQN73O5j589XMQndH7npw/WjANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI3MTEwODEwNTcyOFowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA\r\nBNvHOEL+I5+ZcA68IPargrEj5pNhGAVPADZ4W7lqXT0Rp1cUOsD1ns88Vt4lP6vH\r\nQLPgA795MA3m2Abszy+bCb6jgeMwgeAwHwYDVR0jBBgwFoAU3sISfxzsd3Sj7bQe\r\nGoyKaUOc/PQwKQYDVR0RBCIwIIIMd2ViLnRlc3QubGFuhwTAqAEFggoqLnRlc3Qu\r\nbGFuMA8GA1UdDwEB/wQFAwMHgAAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwPAYDVR0f\r\nBDUwMzAxoC+gLYYraHR0cDovLzEyNy4wLjAuMToxODQ4MC9jcmwvNzA4MWYyZDZh\r\nMjgxLmNybDAdBgNVHQ4EFgQU2ytcjgDAKCwL9zBbzTukGqtg0zowDwYDVR0TAQH/\r\nBAUwAwEBADANBgkqhkiG9w0BAQsFAAOCAQEAV6BYaX4zHLBnFaMFeQe0rV32/aUf\r\nGAqvo8VDAERL0RL7r53v+ClLI8VOzC1/FZz9RDe+T5FZJ6tS4sVThJTkPQr2iIO4\r\nmc77LOun+f6jlLhWuaf/22OSRj6hpgYHajk0QNicYxywNPT9oVndO7+k/nJOf6n4\r\nkjqnfNaljXsaD45NF1nBNHkv1l+k5HGg4B9CYrT2q5taFPbLrCjkPr0fGdswOyaP\r\nsQJ+MHRAJibDIJ8AfPbVFBrCUA8z1rS4BkViBBs84I0fVbqAJbBjOPvonHR2LCmo\r\nboE7GFXvPuIerI4x4KOV6KzD6JtuyOzAgOK3UzFene5Bfo2ABpoPpBKNoQ==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgBFvJ22WNh6QZUrUs\r\n5GjjK1Um98ZH8LyoPboX9d0ru2+hRANCAATbxzhC/iOfmXAOvCD2q4KxI+aTYRgF\r\nTwA2eFu5al09EadXFDrA9Z7PPFbeJT+rx0Cz4AO/eTAN5tgG7M8vmwm+\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Renewal",
+      "requested_by": "",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "CF:EA:D8:5F:A7:FA:19:CD:68:85:D9:9A:B7:9D:E5:55:46:9F:C4:49:FA:EE:9A:C5:79:5B:D6:44:81:6D:FB:66",
+      "notes": "Renewal of serial 54e6516ff07ce0f2f3e9c4e53c5da74c"
+    },
+    {
+      "id": "2e6ba8f6ddf29cbc",
+      "ca_id": "7081f2d6a281",
+      "common_name": "web.test.lan",
+      "sans": [
+        "web.test.lan",
+        "192.168.1.5",
+        "*.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP384",
+      "serial": "3d4243c7b24d68f518517974146cb436",
+      "not_before": 1794135148,
+      "not_after": 1796727448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIDFDCCAfygAwIBAgIQPUJDx7JNaPUYUXl0FGy0NjANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI2MTIwODEwNTcyOFowKjERMA8GA1UECgwISG9tZSBMYWIx\r\nFTATBgNVBAMMDHdlYi50ZXN0LmxhbjB2MBAGByqGSM49AgEGBSuBBAAiA2IABI3O\r\n4XwwS5Tp1Wf74Al8XvudegfBlG1USaAzyeASTNpQFZGl5KXEKoipXm5Kbe1INM7E\r\nzeAv/zcfI+7/o6LIMDMLoCCJQDhWpY5Pqs/ZX+SL5KHO1w7tLRG8uGGehsf0fKOB\r\n4zCB4DAfBgNVHSMEGDAWgBTewhJ/HOx3dKPttB4ajIppQ5z89DApBgNVHREEIjAg\r\nggx3ZWIudGVzdC5sYW6HBMCoAQWCCioudGVzdC5sYW4wDwYDVR0PAQH/BAUDAweA\r\nADATBgNVHSUEDDAKBggrBgEFBQcDATA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8v\r\nMTI3LjAuMC4xOjE4NDgwL2NybC83MDgxZjJkNmEyODEuY3JsMB0GA1UdDgQWBBSB\r\nJaEVWwb/DzTuDG3UnMLisFucSjAPBgNVHRMBAf8EBTADAQEAMA0GCSqGSIb3DQEB\r\nCwUAA4IBAQA7U+jHdMPLV7CGmTsESzkauWYHQTJAfdDVuPci6rVkwHV525lmGUZT\r\nIpqdrA/2cRZWmXcbyynS5GXxKce/DI/LbzpxgiblfX6ezF8sWdZLccHEJzHh91/J\r\nWfgch9yFbdvjVWT2Bh8GVdCvHC36TPMqSuoJ6t7ygliGX4/1pkZNSmBwcXhwdh2Y\r\nk8m6VCNO3nzJUZJwMgr9ZNcQyrcDXwPD5egqcXFJEe+yy8KGrx6lPpci8Rohv9DA\r\nMVX11QDa/DcmWnNBOHewBMj1p2neByiR9Osd4cJfWjxlt9Dl4GHJCfa0NqKhvl8l\r\ngul2ZeIxVibsjYrgBmb4YaH1iBtyhJ0q\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIG2AgEAMBAGByqGSM49AgEGBSuBBAAiBIGeMIGbAgEBBDDS43mhmqd4zNjlFWgc\r\nO3+uwSpc4r3/L+cm8G4Xn/4a6HU3X037+WuwAVBxJOSaoI+hZANiAASNzuF8MEuU\r\n6dVn++AJfF77nXoHwZRtVEmgM8ngEkzaUBWRpeSlxCqIqV5uSm3tSDTOxM3gL/83\r\nHyPu/6OiyDAzC6AgiUA4VqWOT6rP2V/ki+ShztcO7S0RvLhhnobH9Hw=\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Renewal",
+      "requested_by": "",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "52:AC:EE:D7:02:EC:6E:AC:AC:11:2B:9A:B2:BD:EF:8C:C5:1A:D2:8D:30:6A:2E:06:78:8C:C5:98:B1:C6:38:F7",
+      "notes": "Renewal of serial 723321439c16d715f8866a49696d371b (same key)"
+    },
+    {
+      "id": "f7cf8513ff6587f0",
+      "ca_id": "7081f2d6a281",
+      "common_name": "rcgen self signed cert",
+      "sans": [
+        "device.test.lan",
+        "10.0.0.9"
+      ],
+      "profile": "ServerClient",
+      "key_type": "EcdsaP256",
+      "serial": "572aebf75bfc1ff0c3f879ea41445d16",
+      "not_before": 1794135148,
+      "not_after": 1801911448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIDAzCCAeugAwIBAgIQVyrr91v8H/DD+HnqQURdFjANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI3MDIwNjEwNTcyOFowNTEfMB0GA1UEAwwWcmNnZW4gc2Vs\r\nZiBzaWduZWQgY2VydDESMBAGA1UECgwJRGV2aWNlIENvMFkwEwYHKoZIzj0CAQYI\r\nKoZIzj0DAQcDQgAE49nkMobm9pzpkHwitaaXF60D6hQeZB4swTFccoNV3kVI7KPy\r\nKxXWvhAvrNc0qPItjJt3F1gwtXU9t7Hi88hHKqOB5DCB4TAfBgNVHSMEGDAWgBTe\r\nwhJ/HOx3dKPttB4ajIppQ5z89DAgBgNVHREEGTAXgg9kZXZpY2UudGVzdC5sYW6H\r\nBAoAAAkwDwYDVR0PAQH/BAUDAweAADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYB\r\nBQUHAwIwPAYDVR0fBDUwMzAxoC+gLYYraHR0cDovLzEyNy4wLjAuMToxODQ4MC9j\r\ncmwvNzA4MWYyZDZhMjgxLmNybDAdBgNVHQ4EFgQUA8xOan0ZhutqVp6wJs6yk3xr\r\nb2QwDwYDVR0TAQH/BAUwAwEBADANBgkqhkiG9w0BAQsFAAOCAQEAfTPR30sSW2aO\r\nnm3GKWTD5vHaY41za6P0BlmRPQWBndD+I6rFJzAT+g+v6Y5Sgkx8d4dG9+mcBawA\r\nfx2qxn9sOxkgUvwpnePgX0Y85Ne7oPI9jBntgfooSpYKQWVFGWcTT0isKxCc49+F\r\ndeG0M/JaNu7PdWT0qcAoT1IE2e2eWEgRdHBlunCnpNL11BPkRAuy5+GDBG3IBsBL\r\nALMca5Si/EQ7k8NGmi8zK2/L9T4JILmff/daS1bZy0XBb352WRiYXhTlN7+KjD+Y\r\nYf2GPX0fWH7rOmlhkKoCsF2dtQovZygYv9W5c34Jk8ZOnfayqSVKLIlyGzF1FuG7\r\nADXIPCahYg==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": null,
+      "source": "Csr",
+      "requested_by": "test",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "20:F9:45:EF:E1:F8:36:E1:E6:F8:CB:78:1C:58:25:6E:DC:49:87:13:BA:71:6F:00:C4:48:20:EE:AD:27:61:13",
+      "notes": "Request subject: CN=rcgen self signed cert, O=Device Co"
+    },
+    {
+      "id": "858ce02068a1f9d2",
+      "ca_id": "7081f2d6a281",
+      "common_name": "desktop-em8oalb LabCert service",
+      "sans": [
+        "127.0.0.1",
+        "desktop-em8oalb",
+        "desktop-em8oalb.local",
+        "desktop-em8oalb.lan",
+        "localhost",
+        "192.168.64.10"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "37ef516420bc18478723a2db6680ac3e",
+      "not_before": 1794135148,
+      "not_after": 1825671448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIDQDCCAiigAwIBAgIQN+9RZCC8GEeHI6LbZoCsPjANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI3MTEwODEwNTcyOFowPTERMA8GA1UECgwISG9tZSBMYWIx\r\nKDAmBgNVBAMMH2Rlc2t0b3AtZW04b2FsYiBMYWJDZXJ0IHNlcnZpY2UwWTATBgcq\r\nhkjOPQIBBggqhkjOPQMBBwNCAATGiZLvXxATG62mTk40SNJigvq7Tqj6VJvHHuBm\r\ntYaWjUrUYQl5CFrcuP0QWR2acvX2I24YuTwRnyPQClz0iikDo4IBGDCCARQwHwYD\r\nVR0jBBgwFoAU3sISfxzsd3Sj7bQeGoyKaUOc/PQwXQYDVR0RBFYwVIcEfwAAAYIP\r\nZGVza3RvcC1lbThvYWxighVkZXNrdG9wLWVtOG9hbGIubG9jYWyCE2Rlc2t0b3At\r\nZW04b2FsYi5sYW6CCWxvY2FsaG9zdIcEwKhACjAPBgNVHQ8BAf8EBQMDB4AAMBMG\r\nA1UdJQQMMAoGCCsGAQUFBwMBMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly8xMjcu\r\nMC4wLjE6MTg0ODAvY3JsLzcwODFmMmQ2YTI4MS5jcmwwHQYDVR0OBBYEFLeZ3hlj\r\nulwXXog40El+O+CBioZrMA8GA1UdEwEB/wQFMAMBAQAwDQYJKoZIhvcNAQELBQAD\r\nggEBAHqB0CuhBRN0/Tag0uxgcXnRGrg0dFyNCW3nDEx0vwTxEju6L+3aozb9vymN\r\nc4bznYYvHtkbeobtHW3abprYJH9/o6yqT5vqqy5xsMnEDnSsFtkobASIgtRtwd05\r\n0AHuOS6p9/qvXFvYyfMGWhFBFut1bRSODzoAuCD28tDDJsfHjJuNTL0MrK1N40Bz\r\nH5wkaxeb2wCQZPOUneWUMHcyztGNy4+eYCJ1d2IOskdfF2Tu/49/4mL2q34Sl8ak\r\nl9GdFeCM2hJqn/UE3maYdQ0diVxA3A6orl79pInjNP5rvgTa+0+8l+abxOjyzvuO\r\nQGoWkwRuAGxmHD/Zzum6i8KjxWY=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgnANDKwCg2azMw/GW\r\nK4ujikeCOmdPcz3IWHeU3rcA4e6hRANCAATGiZLvXxATG62mTk40SNJigvq7Tqj6\r\nVJvHHuBmtYaWjUrUYQl5CFrcuP0QWR2acvX2I24YuTwRnyPQClz0iikD\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "ServerTls",
+      "requested_by": "LabCert",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "27:02:C1:1E:6A:58:D4:3D:AC:EF:87:9F:7D:CB:D4:76:80:67:F7:2A:BC:ED:F5:F2:6C:5F:BD:6E:32:26:1B:18",
+      "notes": "Used by the built-in secure web address"
+    },
+    {
+      "id": "876f001cb5fd298c",
+      "ca_id": "7081f2d6a281",
+      "common_name": "rcgen self signed cert",
+      "sans": [
+        "enrolled.test.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "3dc6a597bf6983e3b12c87344aaa417f",
+      "not_before": 1794135148,
+      "not_after": 1796727448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIC4TCCAcmgAwIBAgIQPcall79pg+OxLIc0SqpBfzANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI2MTIwODEwNTcyOFowITEfMB0GA1UEAwwWcmNnZW4gc2Vs\r\nZiBzaWduZWQgY2VydDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHunUg3aLgwA\r\nAM4u6h0a15PrKC6A+GuPmnBaPVzs2Yy1Hz8r4H5fl5fI9p7dZZZuuPZpNN8JFKLc\r\nYzsDt8aUBy2jgdYwgdMwHwYDVR0jBBgwFoAU3sISfxzsd3Sj7bQeGoyKaUOc/PQw\r\nHAYDVR0RBBUwE4IRZW5yb2xsZWQudGVzdC5sYW4wDwYDVR0PAQH/BAUDAweAADAT\r\nBgNVHSUEDDAKBggrBgEFBQcDATA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vMTI3\r\nLjAuMC4xOjE4NDgwL2NybC83MDgxZjJkNmEyODEuY3JsMB0GA1UdDgQWBBTcLKfj\r\nLIgtplh8sSu3qOloE+0XXDAPBgNVHRMBAf8EBTADAQEAMA0GCSqGSIb3DQEBCwUA\r\nA4IBAQBQEtCqY+Hppl0lsAMIYd9PFt1ivPne1Z5qLIgxhnVzCfOlDzLxF5aB4TAc\r\n7jsmVo6kkDMD+/H2l7ypgO6zuc6JhALjfELxmrLaPXcFATc53LylaffDNdJF2ARu\r\n7+kIhLgS2AXWWSNRPzP4999mFVgqvRMfiaTWney5tvDfhHEAm8F7+E6JnLn/SzJ9\r\nrr6T86wLN00Yf0W8/Hvzq1FOL0c7pMe5UBbcaQwSR1dZxCgWqBf4qj04HzQm6Ly0\r\nm6yWgH9OUg60O75ZD/wjdYrWjEBa/8i5yESw+lRHh+JR5TLWd+TBsNZPQ7XEG9nF\r\nlLEN/UDQRCPvXigC3xnAA9MXOqnZ\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": null,
+      "source": "Enrollment",
+      "requested_by": "Token \"auto\" from 127.0.0.1",
+      "created": 1794135448,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "4D:C5:90:9C:CF:5D:3C:71:89:19:DA:C5:9F:9B:56:9B:9A:93:0A:4A:47:CC:3E:88:00:EC:0E:26:47:D9:01:62",
+      "notes": "Request subject: CN=rcgen self signed cert"
+    },
+    {
+      "id": "ad585a4cc76fb7ad",
+      "ca_id": "7081f2d6a281",
+      "common_name": "acme.test.lan",
+      "sans": [
+        "acme.test.lan",
+        "192.168.1.77"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "5e10a2f71bd17ecc54712c02d35aacae",
+      "not_before": 1794135148,
+      "not_after": 1801911448,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIC2jCCAcKgAwIBAgIQXhCi9xvRfsxUcSwC01qsrjANBgkqhkiG9w0BAQsFADAq\r\nMREwDwYDVQQKDAhIb21lIExhYjEVMBMGA1UEAwwMVGVzdCBJc3N1aW5nMB4XDTI2\r\nMTEwODEwNTIyOFoXDTI3MDIwNjEwNTcyOFowGDEWMBQGA1UEAwwNYWNtZS50ZXN0\r\nLmxhbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABLzjc1ZEvayrFmxWfebwNrQC\r\nYACcAlnvdBUVSYEroc3rzob0hdTqC0wtq1xfTthNbYQ1zCL++o9WvYK0RrNSYCuj\r\ngdgwgdUwHwYDVR0jBBgwFoAU3sISfxzsd3Sj7bQeGoyKaUOc/PQwHgYDVR0RBBcw\r\nFYINYWNtZS50ZXN0LmxhbocEwKgBTTAPBgNVHQ8BAf8EBQMDB4AAMBMGA1UdJQQM\r\nMAoGCCsGAQUFBwMBMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly8xMjcuMC4wLjE6\r\nMTg0ODAvY3JsLzcwODFmMmQ2YTI4MS5jcmwwHQYDVR0OBBYEFCffnIy1FBYnQWdw\r\nxqY6WQvUeHcIMA8GA1UdEwEB/wQFMAMBAQAwDQYJKoZIhvcNAQELBQADggEBAH0g\r\nBA6k6kDh0WdQxiPZDdgqwTUhuYk2vivXiMQSV0k8z0pdbIeXWNoZtE3PfVKy/Z9y\r\nqye/3gjPmR8PS2uvJTZsy0u8hDDfgBjQ4AFdak1/A+8J3pOgDVEx+fl9k/hytacX\r\n3LtrkaliCO2RxY12f0ij/1feQrl1sWIj49E/8jvC4HolQfW3kTxKd1gOY5HiJivi\r\n+WL4mwlylxvgziiT1PmLFbeij9uYv4rKouGJ/2Ppy8kFr3jHXFhlVQhOrNdx8CSu\r\nRY1WSohWT6ssO2oUNNjF+PoEhYfYyp78h0E8DGrmmID3mUhmbsUDqPvC9ZTcEqhE\r\ncJIGdGNa6F1BtZhEOFI=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": null,
+      "source": "Acme",
+      "requested_by": "ACME account bea74722db558fa7",
+      "created": 1794135448,
+      "revoked": {
+        "at": 1794135448,
+        "reason": "Superseded"
+      },
+      "renewed_by": null,
+      "fingerprint": "5E:95:34:8D:20:8C:EF:BF:D3:94:07:14:9F:ED:63:4A:45:72:24:B7:74:18:8D:0E:1C:63:E8:A5:83:D5:82:84",
+      "notes": "Request subject: "
+    }
+  ],
+  "tokens": [
+    {
+      "id": "t1",
+      "label": "auto",
+      "secret": "tok-auto",
+      "created": 1794135448,
+      "expires": null,
+      "uses": 1,
+      "max_uses": null,
+      "auto_approve": true,
+      "profile": "Server",
+      "validity_days": 30,
+      "ca_id": null,
+      "disabled": false
+    },
+    {
+      "id": "t2",
+      "label": "manual",
+      "secret": "tok-manual",
+      "created": 1794135448,
+      "expires": null,
+      "uses": 1,
+      "max_uses": null,
+      "auto_approve": false,
+      "profile": "Server",
+      "validity_days": 30,
+      "ca_id": null,
+      "disabled": false
+    }
+  ],
+  "requests": [
+    {
+      "id": "8ba7a27be2071f561a7d5bf9",
+      "received": 1794135448,
+      "from_addr": "127.0.0.1",
+      "token_label": "manual",
+      "csr_pem": "-----BEGIN CERTIFICATE REQUEST-----\nMIIBCzCBsgIBADAhMR8wHQYDVQQDDBZyY2dlbiBzZWxmIHNpZ25lZCBjZXJ0MFkw\nEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEe6dSDdouDAAAzi7qHRrXk+soLoD4a4+a\ncFo9XOzZjLUfPyvgfl+Xl8j2nt1llm649mk03wkUotxjOwO3xpQHLaAvMC0GCSqG\nSIb3DQEJDjEgMB4wHAYDVR0RBBUwE4IRZW5yb2xsZWQudGVzdC5sYW4wCgYIKoZI\nzj0EAwIDSAAwRQIgWGNQLyDH53Dt0KoTkj4X9xeu5zaY3HMkMO2qCwd6mBYCIQDx\nCysOm5qIIBDc7zxJw9X/OxCKgLLxqjPF1VeuKMONIA==\n-----END CERTIFICATE REQUEST-----\n",
+      "subject": "CN=rcgen self signed cert",
+      "sans": [
+        "enrolled.test.lan"
+      ],
+      "key_desc": "ECDSA P-256",
+      "profile": "Server",
+      "validity_days": 30,
+      "ca_id": "7081f2d6a281",
+      "status": "Pending",
+      "cert_id": null,
+      "note": ""
+    }
+  ],
+  "acme_accounts": [
+    {
+      "id": "bea74722db558fa7",
+      "jwk": {
+        "crv": "P-256",
+        "kty": "EC",
+        "x": "gLDdl6M9Ok6OdRX8Ap-90VEdY_tabKbVsE6eeWBO2n4",
+        "y": "oKXDHSHFUSpKSz0hwrLOcQFCahPg9qS4jX11JDTe5Io"
+      },
+      "thumbprint": "A1Xexso8vT415JsKTS1YoZLkAY59PfIjt4sUwkxpVz0",
+      "contact": [
+        "mailto:test@test.lan"
+      ],
+      "created": 1794135448,
+      "status": "valid",
+      "last_seen": 1794135448,
+      "orders": 1
+    }
+  ],
+  "settings": {
+    "organization": "Home Lab",
+    "org_unit": "",
+    "locality": "",
+    "state": "",
+    "country": "",
+    "default_key": "EcdsaP256",
+    "default_days": 365,
+    "ca_years": 10,
+    "warn_days": 30,
+    "crl_days": 7,
+    "public_host": "127.0.0.1",
+    "include_cdp": true,
+    "dark": true,
+    "default_ca": "7081f2d6a281",
+    "server": {
+      "bind": "0.0.0.0",
+      "http_on": true,
+      "http_port": 18480,
+      "https_on": true,
+      "https_port": 18443,
+      "autostart": false,
+      "acme_on": true,
+      "acme_auto_approve": true,
+      "acme_days": 90,
+      "acme_ca": null,
+      "enroll_on": true,
+      "publish_certs": false,
+      "server_cert_id": "858ce02068a1f9d2"
+    }
+  },
+  "log": [
+    {
+      "ts": 1794135445,
+      "kind": "Success",
+      "category": "authority",
+      "msg": "Created root authority \"Test Root\" (ECDSA P-384, 10 years)"
+    },
+    {
+      "ts": 1794135445,
+      "kind": "Success",
+      "category": "authority",
+      "msg": "Created intermediate authority \"Test Issuing\" under \"Test Root\""
+    },
+    {
+      "ts": 1794135445,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, created in app) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135445,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, created in app) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135446,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, created in app) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135446,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, created in app) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, created in app) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, created in app) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 365 days, renewal) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Warn",
+      "category": "revoke",
+      "msg": "Revoked \"web.test.lan\" — Replaced (superseded)"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"web.test.lan\" (Server, 30 days, renewal) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Warn",
+      "category": "revoke",
+      "msg": "Revoked \"web.test.lan\" — On hold (temporary)"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Info",
+      "category": "revoke",
+      "msg": "Released hold on \"web.test.lan\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Warn",
+      "category": "revoke",
+      "msg": "Revoked \"web.test.lan\" — Key compromised"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"rcgen self signed cert\" (Server+Client, 90 days, signed request) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"desktop-em8oalb LabCert service\" (Server, 365 days, built-in server) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "server",
+      "msg": "Network service started (HTTP port 18480, HTTPS port 18443)"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"rcgen self signed cert\" (Server, 30 days, network enrollment) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Info",
+      "category": "enroll",
+      "msg": "Request for \"rcgen self signed cert\" from 127.0.0.1 is waiting for approval"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Warn",
+      "category": "enroll",
+      "msg": "Rejected enrollment from 127.0.0.1 (unknown token)"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Info",
+      "category": "acme",
+      "msg": "New ACME account bea74722db558fa7 (mailto:test@test.lan) from 127.0.0.1:45639"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Info",
+      "category": "acme",
+      "msg": "ACME order for acme.test.lan, 192.168.1.77 (account bea74722db558fa7)"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Info",
+      "category": "acme",
+      "msg": "Auto-approved acme.test.lan for account bea74722db558fa7"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Info",
+      "category": "acme",
+      "msg": "Auto-approved 192.168.1.77 for account bea74722db558fa7"
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"acme.test.lan\" (Server, 90 days, acme) — signed by \"Test Issuing\""
+    },
+    {
+      "ts": 1794135448,
+      "kind": "Warn",
+      "category": "revoke",
+      "msg": "Revoked \"acme.test.lan\" — Replaced (superseded)"
+    }
+  ]
+}

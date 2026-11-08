@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "authorities": [],
+  "certs": [],
+  "tokens": [],
+  "requests": [],
+  "acme_accounts": [],
+  "settings": {
+    "organization": "Home Lab",
+    "org_unit": "",
+    "locality": "",
+    "state": "",
+    "country": "",
+    "default_key": "EcdsaP256",
+    "default_days": 365,
+    "ca_years": 10,
+    "warn_days": 30,
+    "crl_days": 7,
+    "public_host": "",
+    "include_cdp": true,
+    "dark": true,
+    "default_ca": null,
+    "server": {
+      "bind": "0.0.0.0",
+      "http_on": true,
+      "http_port": 8080,
+      "https_on": true,
+      "https_port": 8443,
+      "autostart": false,
+      "acme_on": true,
+      "acme_auto_approve": false,
+      "acme_days": 90,
+      "acme_ca": null,
+      "enroll_on": true,
+      "publish_certs": false,
+      "server_cert_id": null
+    }
+  },
+  "log": []
+}

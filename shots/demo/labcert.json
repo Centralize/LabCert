@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "authorities": [
+    {
+      "id": "19a7d80cfe52",
+      "name": "Home Lab Root CA",
+      "parent": null,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB3TCCAWOgAwIBAgIQeiZwuBXbIfGVfjTO+vFfBDAKBggqhkjOPQQDAzAuMREw\r\nDwYDVQQKDAhIb21lIExhYjEZMBcGA1UEAwwQSG9tZSBMYWIgUm9vdCBDQTAeFw0y\r\nNjExMDgwOTU1MzBaFw0zNjExMDcxMDU1MzBaMC4xETAPBgNVBAoMCEhvbWUgTGFi\r\nMRkwFwYDVQQDDBBIb21lIExhYiBSb290IENBMHYwEAYHKoZIzj0CAQYFK4EEACID\r\nYgAEVxCRcHmfQh5T6Dg41hd4ciPlb68cj2TGrHIegb6ehQmeSYcgCmpZhL67vi6m\r\nlec4uHWXUsqSkm82OCSm+pxiZHxeWT1PpkcfASufsQi03XfzYnsHAwSBn+6qCH0m\r\nVaaoo0YwRDAPBgNVHQ8BAf8EBQMDB4YAMB0GA1UdDgQWBBSwHI4akCLnQ/yJAfZH\r\n7sUMDxcUzjASBgNVHRMBAf8ECDAGAQH/AgEBMAoGCCqGSM49BAMDA2gAMGUCMH+l\r\nXB3hmxAIY7U+53pWFDrAuwqxnc2uS540s94fTMmoBWOEnyZcyOQg53J9fmSWhQIx\r\nAM0k1N33I4co5db1nZlJ/jFFrqgeO54wbSh9Uu5YW/nqcaZJLeJAXrF1jlLyHjEd\r\n+w==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIG2AgEAMBAGByqGSM49AgEGBSuBBAAiBIGeMIGbAgEBBDAWFs9pKUNMQ0Uu8aF7\r\nHKaPVknBMsjE4VQknHO1iZ0sgJC52Ecu/BVuwaLDvn6JX2mhZANiAARXEJFweZ9C\r\nHlPoODjWF3hyI+VvrxyPZMasch6Bvp6FCZ5JhyAKalmEvru+LqaV5zi4dZdSypKS\r\nbzY4JKb6nGJkfF5ZPU+mRx8BK5+xCLTdd/NiewcDBIGf7qoIfSZVpqg=\r\n-----END PRIVATE KEY-----\r\n",
+      "key_type": "EcdsaP384",
+      "subject": "O=Home Lab, CN=Home Lab Root CA",
+      "serial": "7a2670b815db21f1957e34cefaf15f04",
+      "not_before": 1794131730,
+      "not_after": 2109668130,
+      "created": 1794135330,
+      "imported": false,
+      "path_len": 1,
+      "crl_number": 1,
+      "crl_pem": "-----BEGIN X509 CRL-----\r\nMIIBBzCBjgIBATAKBggqhkjOPQQDAzAuMREwDwYDVQQKDAhIb21lIExhYjEZMBcG\r\nA1UEAwwQSG9tZSBMYWIgUm9vdCBDQRcNMjYxMTA4MTA1NDMwWhcNMjYxMTE1MTA1\r\nNTMwWqAvMC0wHwYDVR0jBBgwFoAUsByOGpAi50P8iQH2R+7FDA8XFM4wCgYDVR0U\r\nBAMCAQEwCgYIKoZIzj0EAwMDaAAwZQIxAO2HsOVDTdVZeHQq87IL/XdfCcbxzgNr\r\nty7jCEdq15yFg2KdRHNuJc2IhQqZckC+vQIwKtlnRuQ8NyThzEdlAbJVKBjP238A\r\nbELQDs3qn64S1J72nmFTpcv+bYPydpTyMh5s\r\n-----END X509 CRL-----\r\n",
+      "crl_this_update": 1794135270,
+      "crl_next_update": 1794740130,
+      "fingerprint": "0A:09:A1:9D:B4:1A:D1:AB:73:A1:1A:6D:BA:FF:72:70:18:61:57:6A:76:69:A3:F0:90:1C:24:CC:69:DC:39:67",
+      "notes": "",
+      "self_signed": true,
+      "revoked": null
+    },
+    {
+      "id": "64bd44376284",
+      "name": "Home Lab Issuing CA",
+      "parent": "19a7d80cfe52",
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB4zCCAWqgAwIBAgIQczJvIOTxPCAKOuEjpjOEizAKBggqhkjOPQQDAzAuMREw\r\nDwYDVQQKDAhIb21lIExhYjEZMBcGA1UEAwwQSG9tZSBMYWIgUm9vdCBDQTAeFw0y\r\nNjExMDgwOTU1MzBaFw0zMTExMDgxMDU1MzBaMDExETAPBgNVBAoMCEhvbWUgTGFi\r\nMRwwGgYDVQQDDBNIb21lIExhYiBJc3N1aW5nIENBMFkwEwYHKoZIzj0CAQYIKoZI\r\nzj0DAQcDQgAE7Zww9i7y4/jQZkzSZPU0h0UDQnWbPcfexkxxg1catkov+r/bUgRx\r\n/b+XHljgb11Qo8ibOx6PCqcONtVjasnwWKNnMGUwHwYDVR0jBBgwFoAUsByOGpAi\r\n50P8iQH2R+7FDA8XFM4wDwYDVR0PAQH/BAUDAweGADAdBgNVHQ4EFgQUiswR0Umj\r\nWBAZq7RV0yZTZGGYP6IwEgYDVR0TAQH/BAgwBgEB/wIBADAKBggqhkjOPQQDAwNn\r\nADBkAjAIUJwXwK6f3ombhT6mSI++ksQCUgDDsNbSNgjmDG2UR+9YkmC5TLROCg3u\r\nlY3N5DgCMD/f6XfLH3vvATM1CBguO5nslQq/FRJf42NDPqFBa9L0JYvgSCjbvcbI\r\nesP6dnrHSQ==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgPVAj44egfsiqd+A6\r\npIEF7NJkJjOI1f8wqeUoF0I8cfehRANCAATtnDD2LvLj+NBmTNJk9TSHRQNCdZs9\r\nx97GTHGDVxq2Si/6v9tSBHH9v5ceWOBvXVCjyJs7Ho8Kpw421WNqyfBY\r\n-----END PRIVATE KEY-----\r\n",
+      "key_type": "EcdsaP256",
+      "subject": "O=Home Lab, CN=Home Lab Issuing CA",
+      "serial": "73326f20e4f13c200a3ae123a633848b",
+      "not_before": 1794131730,
+      "not_after": 1951901730,
+      "created": 1794135330,
+      "imported": false,
+      "path_len": 0,
+      "crl_number": 2,
+      "crl_pem": "-----BEGIN X509 CRL-----\r\nMIIBHjCBxAIBATAKBggqhkjOPQQDAjAxMREwDwYDVQQKDAhIb21lIExhYjEcMBoG\r\nA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQRcNMjYxMTA4MTA1NDMwWhcNMjYxMTE1\r\nMTA1NTMwWjAxMC8CEBmWymMQIzEN1UhZSG/hc0kXDTI2MTEwODEwNTUzMFowDDAK\r\nBgNVHRUEAwoBAaAvMC0wHwYDVR0jBBgwFoAUiswR0UmjWBAZq7RV0yZTZGGYP6Iw\r\nCgYDVR0UBAMCAQIwCgYIKoZIzj0EAwIDSQAwRgIhAMtH10JHiDC7cCjrIYhZkwO8\r\nRCQz+uNq5B8XHXeg5GvXAiEAgMCTaZIDwc0RUUQFZiUnmDnshjTiYzExLS1ZZCzJ\r\nb7Y=\r\n-----END X509 CRL-----\r\n",
+      "crl_this_update": 1794135270,
+      "crl_next_update": 1794740130,
+      "fingerprint": "F3:3A:BE:8F:5E:83:41:61:8F:39:2A:0C:6B:44:DE:E3:1E:3C:B4:AE:C4:B3:A0:58:1A:A1:9F:3E:81:1C:E0:4B",
+      "notes": "",
+      "self_signed": false,
+      "revoked": null
+    }
+  ],
+  "certs": [
+    {
+      "id": "7cd16b5e798362a8",
+      "ca_id": "64bd44376284",
+      "common_name": "nas.home.lan",
+      "sans": [
+        "nas.home.lan",
+        "192.168.1.20",
+        "nas"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "33bb3f98bc88fd306e4fcf322deeeed1",
+      "not_before": 1794135030,
+      "not_after": 1828436130,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB+DCCAZ6gAwIBAgIQM7s/mLyI/TBuT88yLe7u0TAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yNzEyMTAxMDU1MzBaMCoxETAPBgNVBAoMCEhvbWUg\r\nTGFiMRUwEwYDVQQDDAxuYXMuaG9tZS5sYW4wWTATBgcqhkjOPQIBBggqhkjOPQMB\r\nBwNCAARPL/0ozTdIe1AQ4P5RW4NrR1xsynORmmphmgqxeQsE4jybQ9HPWRaM1kO1\r\nU3Vo9VpiVlaPxOnVoF3SD58npmr/o4GeMIGbMB8GA1UdIwQYMBaAFIrMEdFJo1gQ\r\nGau0VdMmU2RhmD+iMCIGA1UdEQQbMBmCDG5hcy5ob21lLmxhbocEwKgBFIIDbmFz\r\nMA8GA1UdDwEB/wQFAwMHgAAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYE\r\nFL07jQXlZtv2VDpWZr7kQM2UafJwMA8GA1UdEwEB/wQFMAMBAQAwCgYIKoZIzj0E\r\nAwIDSAAwRQIhAL4Ok7aBLa1aYeNrQWzQaL0qs/1P7iWCylgQ7CJK9gdIAiAD6gya\r\niBn85xHh4K868qsnqDbpjJ4jlNpZI+0WbkSfkA==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgkh8oDI4XA/YGbubQ\r\nQlVCsgHx8jzQP40hQ1Wi6IeeYjqhRANCAARPL/0ozTdIe1AQ4P5RW4NrR1xsynOR\r\nmmphmgqxeQsE4jybQ9HPWRaM1kO1U3Vo9VpiVlaPxOnVoF3SD58npmr/\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "A9:D1:0E:D4:2B:47:45:ED:A5:B0:54:4C:1E:21:F9:8D:DA:AB:D9:36:53:33:9D:41:4C:3F:F8:2A:BC:EF:97:49",
+      "notes": ""
+    },
+    {
+      "id": "296b8f1652a4c071",
+      "ca_id": "64bd44376284",
+      "common_name": "homeassistant.home.lan",
+      "sans": [
+        "homeassistant.home.lan",
+        "192.168.1.30"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "5e1112058d3a42b2d7315d9ab467160f",
+      "not_before": 1794135030,
+      "not_after": 1825671330,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIICBzCCAa2gAwIBAgIQXhESBY06QrLXMV2atGcWDzAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yNzExMDgxMDU1MzBaMDQxETAPBgNVBAoMCEhvbWUg\r\nTGFiMR8wHQYDVQQDDBZob21lYXNzaXN0YW50LmhvbWUubGFuMFkwEwYHKoZIzj0C\r\nAQYIKoZIzj0DAQcDQgAEQ++Cqtfq7r9VYyXA/3FMGCnOq3I/xjl/er9V5GH86ER5\r\nnjyFiyPtktvdQcxNJbh8Z8iCVd+UfKTUFEDdV+Czh6OBozCBoDAfBgNVHSMEGDAW\r\ngBSKzBHRSaNYEBmrtFXTJlNkYZg/ojAnBgNVHREEIDAeghZob21lYXNzaXN0YW50\r\nLmhvbWUubGFuhwTAqAEeMA8GA1UdDwEB/wQFAwMHgAAwEwYDVR0lBAwwCgYIKwYB\r\nBQUHAwEwHQYDVR0OBBYEFBOFROttaLixqGMVpg9fXxcHyDyHMA8GA1UdEwEB/wQF\r\nMAMBAQAwCgYIKoZIzj0EAwIDSAAwRQIgDp8hJH3Dm7hoxi0ekFA6ZFDIcLu0hRam\r\nqQp7WNxNFLoCIQD4gDGBqy2DlvaiDm3nAfYFCJblM0HWAfzGRBi08qcYQg==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgZMgOcZGCFDd/LmaC\r\nNi3PSaOmT9fXndHfUxpg3jVEEd2hRANCAARD74Kq1+ruv1VjJcD/cUwYKc6rcj/G\r\nOX96v1XkYfzoRHmePIWLI+2S291BzE0luHxnyIJV35R8pNQUQN1X4LOH\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "A8:1D:25:18:A0:76:F5:3E:11:B0:28:E6:03:62:B3:09:01:0A:E4:B8:6A:85:5D:1D:D8:F2:20:B8:16:01:5C:7C",
+      "notes": ""
+    },
+    {
+      "id": "3ee34f89640c22f1",
+      "ca_id": "64bd44376284",
+      "common_name": "router.home.lan",
+      "sans": [
+        "router.home.lan",
+        "192.168.1.1"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "38c672d775dd8a24611b7ea3ef8a8130",
+      "not_before": 1794135030,
+      "not_after": 1795863330,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB+TCCAZ+gAwIBAgIQOMZy13XdiiRhG36j74qBMDAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yNjExMjgxMDU1MzBaMC0xETAPBgNVBAoMCEhvbWUg\r\nTGFiMRgwFgYDVQQDDA9yb3V0ZXIuaG9tZS5sYW4wWTATBgcqhkjOPQIBBggqhkjO\r\nPQMBBwNCAATs/dOm7Z54CVU5rnVS7JbIpX0KhhGK4Bm/3i2ZvsDXd08GP3KQq/To\r\nKjHiZ5l+b3vq93S47azMNtx7sQ8bV5cdo4GcMIGZMB8GA1UdIwQYMBaAFIrMEdFJ\r\no1gQGau0VdMmU2RhmD+iMCAGA1UdEQQZMBeCD3JvdXRlci5ob21lLmxhbocEwKgB\r\nATAPBgNVHQ8BAf8EBQMDB4AAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB0GA1UdDgQW\r\nBBS5rV7admg/ssLiRSC6fcZX+NxSFzAPBgNVHRMBAf8EBTADAQEAMAoGCCqGSM49\r\nBAMCA0gAMEUCIGPvlZjh9agkTyRsv4if3Ib37fChjdGVtS5pypjTDOD9AiEAkMkB\r\nyc4Pzwr2NMigc6B1daT+ZGzv4lLNVxPy67v5Crw=\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgSVT2Ro4kn2ijHSgA\r\najEsgGFGzeZY4fxKCGbebYAQYwahRANCAATs/dOm7Z54CVU5rnVS7JbIpX0KhhGK\r\n4Bm/3i2ZvsDXd08GP3KQq/ToKjHiZ5l+b3vq93S47azMNtx7sQ8bV5cd\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "9B:95:38:C8:7C:93:5B:D9:9B:1F:0E:32:ED:96:00:F9:AA:52:BF:EF:C3:D2:BA:64:AD:E2:C7:85:6D:04:50:34",
+      "notes": ""
+    },
+    {
+      "id": "791225f62cc3c35a",
+      "ca_id": "64bd44376284",
+      "common_name": "*.k8s.home.lan",
+      "sans": [
+        "*.k8s.home.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "35d2550e8a26519889bce4a90c104bca",
+      "not_before": 1794135030,
+      "not_after": 1801911330,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB8TCCAZegAwIBAgIQNdJVDoomUZiJvOSpDBBLyjAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yNzAyMDYxMDU1MzBaMCwxETAPBgNVBAoMCEhvbWUg\r\nTGFiMRcwFQYDVQQDDA4qLms4cy5ob21lLmxhbjBZMBMGByqGSM49AgEGCCqGSM49\r\nAwEHA0IABFcsEfIfvB2bF238C/GLk2icqWHFXf8XSeFc+JKmKy2HhInLqOYdKJNM\r\n1lA2y5INl2jbpBZBPo+I3eZ8V/H7IOOjgZUwgZIwHwYDVR0jBBgwFoAUiswR0Umj\r\nWBAZq7RV0yZTZGGYP6IwGQYDVR0RBBIwEIIOKi5rOHMuaG9tZS5sYW4wDwYDVR0P\r\nAQH/BAUDAweAADATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4EFgQUc8RPT8FZ\r\ncNOxTPsbHPsQVMOrtEcwDwYDVR0TAQH/BAUwAwEBADAKBggqhkjOPQQDAgNIADBF\r\nAiEA4gszzbNCWPVPVQyLasm5HS4lDZEq4vX3U5a/gNVJ2DUCIASJLBKHB/LtL8Xl\r\n0ycs2ap8Wrz1a361XQXV39AX+KzS\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQg3N1RhzffsMYLg98t\r\nyMznUnXs5p6h1SpvzLoSXD6HiHuhRANCAARXLBHyH7wdmxdt/Avxi5NonKlhxV3/\r\nF0nhXPiSpisth4SJy6jmHSiTTNZQNsuSDZdo26QWQT6PiN3mfFfx+yDj\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "53:BA:99:65:EF:83:F9:47:DB:62:54:F8:2A:26:BC:F2:A9:99:D6:D7:6E:B5:34:BB:2C:19:B1:43:2F:7C:9C:52",
+      "notes": ""
+    },
+    {
+      "id": "bf1d7178c02b947e",
+      "ca_id": "64bd44376284",
+      "common_name": "grafana.home.lan",
+      "sans": [
+        "grafana.home.lan"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "1996ca631023310dd54859486fe17349",
+      "not_before": 1794135030,
+      "not_after": 1825671330,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB9TCCAZugAwIBAgIQGZbKYxAjMQ3VSFlIb+FzSTAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yNzExMDgxMDU1MzBaMC4xETAPBgNVBAoMCEhvbWUg\r\nTGFiMRkwFwYDVQQDDBBncmFmYW5hLmhvbWUubGFuMFkwEwYHKoZIzj0CAQYIKoZI\r\nzj0DAQcDQgAEZikgI5pGBYfQy7svXzSBUDhQhSgYnP8R+1pxl4xc/Cw9r1Z7jF2H\r\nwpGOl1lZ6HGqXGzIqzhFhSt/QsX3Nz1byaOBlzCBlDAfBgNVHSMEGDAWgBSKzBHR\r\nSaNYEBmrtFXTJlNkYZg/ojAbBgNVHREEFDASghBncmFmYW5hLmhvbWUubGFuMA8G\r\nA1UdDwEB/wQFAwMHgAAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYEFNlV\r\nwRhyXNvCURvGwgdhLnumv0+JMA8GA1UdEwEB/wQFMAMBAQAwCgYIKoZIzj0EAwID\r\nSAAwRQIhANrwoMHKjn+l2ieXZSi+b2OvOB0K65/YqvqkX4pb8UurAiAFIVgNOFIs\r\n060lllUpPPdEKPls9XV8s4FsoAqoDmebkA==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgFhHMjZB09bG0wdbh\r\nH061NNYPe7fbKciMBXLv3pornKihRANCAARmKSAjmkYFh9DLuy9fNIFQOFCFKBic\r\n/xH7WnGXjFz8LD2vVnuMXYfCkY6XWVnocapcbMirOEWFK39Cxfc3PVvJ\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": {
+        "at": 1794135330,
+        "reason": "KeyCompromise"
+      },
+      "renewed_by": null,
+      "fingerprint": "91:32:83:DB:A5:DB:C4:8C:C7:54:8A:63:8D:42:D0:91:0F:A9:BC:A6:8B:A5:C6:02:C1:69:43:B4:80:30:32:D8",
+      "notes": ""
+    },
+    {
+      "id": "35d0525024ca3759",
+      "ca_id": "64bd44376284",
+      "common_name": "alice@home.lan",
+      "sans": [
+        "alice@home.lan"
+      ],
+      "profile": "Email",
+      "key_type": "EcdsaP256",
+      "serial": "10c345382f6fbf339945045f0f43c0f9",
+      "not_before": 1794135030,
+      "not_after": 1857207330,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB8TCCAZegAwIBAgIQEMNFOC9vvzOZRQRfD0PA+TAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yODExMDcxMDU1MzBaMCwxETAPBgNVBAoMCEhvbWUg\r\nTGFiMRcwFQYDVQQDDA5hbGljZUBob21lLmxhbjBZMBMGByqGSM49AgEGCCqGSM49\r\nAwEHA0IABCipfsdv8/oEjukG2L6O/EJ4jX+oYVf5Kq4QgJUPdD8zGqZznqVmjlut\r\nTFmU5WyLauSJxjh2LSoEf2W+81n9w/ejgZUwgZIwHwYDVR0jBBgwFoAUiswR0Umj\r\nWBAZq7RV0yZTZGGYP6IwGQYDVR0RBBIwEIEOYWxpY2VAaG9tZS5sYW4wDwYDVR0P\r\nAQH/BAUDAwfAADATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUX7jVdyfs\r\nZgbdC5CpHe7lTgP5rcowDwYDVR0TAQH/BAUwAwEBADAKBggqhkjOPQQDAgNIADBF\r\nAiBD6q7COIQz5sm/R3Yni3ziXyHS6dGW77FNSWBVJvjOfgIhANRoA5R8cRPWUjjL\r\nmN6mw1PGL9Gh0Yfkf3ajCKsc29n3\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgf8y/NLI9lbWJnIkG\r\n8CnJTmW1G+inMYe3ieR/pGHCN1ihRANCAAQoqX7Hb/P6BI7pBti+jvxCeI1/qGFX\r\n+SquEICVD3Q/Mxqmc56lZo5brUxZlOVsi2rkicY4di0qBH9lvvNZ/cP3\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "05:A3:22:D6:9A:6D:12:F8:BC:F5:95:F1:38:18:96:22:78:63:D3:46:47:15:88:08:7E:4E:F1:CB:50:38:C0:DE",
+      "notes": ""
+    },
+    {
+      "id": "c65d8f14b1009d93",
+      "ca_id": "64bd44376284",
+      "common_name": "printer.home.lan",
+      "sans": [
+        "printer.home.lan",
+        "192.168.1.45"
+      ],
+      "profile": "Server",
+      "key_type": "EcdsaP256",
+      "serial": "3235fd0b83ca01c1247a9497a8205d30",
+      "not_before": 1794135030,
+      "not_after": 1865415330,
+      "cert_pem": "-----BEGIN CERTIFICATE-----\r\nMIIB+zCCAaGgAwIBAgIQMjX9C4PKAcEkepSXqCBdMDAKBggqhkjOPQQDAjAxMREw\r\nDwYDVQQKDAhIb21lIExhYjEcMBoGA1UEAwwTSG9tZSBMYWIgSXNzdWluZyBDQTAe\r\nFw0yNjExMDgxMDUwMzBaFw0yOTAyMTAxMDU1MzBaMC4xETAPBgNVBAoMCEhvbWUg\r\nTGFiMRkwFwYDVQQDDBBwcmludGVyLmhvbWUubGFuMFkwEwYHKoZIzj0CAQYIKoZI\r\nzj0DAQcDQgAEMG4CeyzMoM6L2YvAP/DGWDDGX0zgzs1ofrmvcc9CQB6+4IpNEH7N\r\nLvdAkjL+0TRFXuKuFvpwbHCYJrN6aC2y+qOBnTCBmjAfBgNVHSMEGDAWgBSKzBHR\r\nSaNYEBmrtFXTJlNkYZg/ojAhBgNVHREEGjAYghBwcmludGVyLmhvbWUubGFuhwTA\r\nqAEtMA8GA1UdDwEB/wQFAwMHgAAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0O\r\nBBYEFDWQvfSYsPjyOjrHDoBX1u+sdQwYMA8GA1UdEwEB/wQFMAMBAQAwCgYIKoZI\r\nzj0EAwIDSAAwRQIgavZ3VHUdFBDcSUKpyu7xPOF6f2Yu8XyFIQXn7WWpj/YCIQDr\r\ncrX9uwEEsDoduU3irD2f8DJbbuxCkeM3yEQ738scRg==\r\n-----END CERTIFICATE-----\r\n",
+      "key_pem": "-----BEGIN PRIVATE KEY-----\r\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgzsAvOofB+aACYrea\r\nwScSDcxmfStght7XBWvvkl5GaDWhRANCAAQwbgJ7LMygzovZi8A/8MZYMMZfTODO\r\nzWh+ua9xz0JAHr7gik0Qfs0u90CSMv7RNEVe4q4W+nBscJgms3poLbL6\r\n-----END PRIVATE KEY-----\r\n",
+      "source": "Manual",
+      "requested_by": "",
+      "created": 1794135330,
+      "revoked": null,
+      "renewed_by": null,
+      "fingerprint": "DE:EA:D8:61:D1:EE:1E:D3:CE:D0:FB:80:16:48:BE:08:13:B6:30:23:C6:F9:35:6E:B2:08:40:55:D7:FE:29:AA",
+      "notes": ""
+    }
+  ],
+  "tokens": [
+    {
+      "id": "ae6a07e971d5",
+      "label": "Office laptops",
+      "secret": "demo-token",
+      "created": 1794135330,
+      "expires": null,
+      "uses": 0,
+      "max_uses": null,
+      "auto_approve": false,
+      "profile": "Client",
+      "validity_days": 365,
+      "ca_id": null,
+      "disabled": false
+    }
+  ],
+  "requests": [],
+  "acme_accounts": [],
+  "settings": {
+    "organization": "Home Lab",
+    "org_unit": "",
+    "locality": "",
+    "state": "",
+    "country": "",
+    "default_key": "EcdsaP256",
+    "default_days": 365,
+    "ca_years": 10,
+    "warn_days": 30,
+    "crl_days": 7,
+    "public_host": "",
+    "include_cdp": true,
+    "dark": true,
+    "default_ca": "64bd44376284",
+    "server": {
+      "bind": "0.0.0.0",
+      "http_on": true,
+      "http_port": 8080,
+      "https_on": true,
+      "https_port": 8443,
+      "autostart": false,
+      "acme_on": true,
+      "acme_auto_approve": false,
+      "acme_days": 90,
+      "acme_ca": null,
+      "enroll_on": true,
+      "publish_certs": false,
+      "server_cert_id": null
+    }
+  },
+  "log": [
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "authority",
+      "msg": "Created root authority \"Home Lab Root CA\" (ECDSA P-384, 10 years)"
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "authority",
+      "msg": "Created intermediate authority \"Home Lab Issuing CA\" under \"Home Lab Root CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"nas.home.lan\" (Server, 397 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"homeassistant.home.lan\" (Server, 365 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"router.home.lan\" (Server, 20 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"*.k8s.home.lan\" (Server, 90 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"grafana.home.lan\" (Server, 365 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"alice@home.lan\" (Email, 730 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Success",
+      "category": "issue",
+      "msg": "Issued \"printer.home.lan\" (Server, 825 days) via Created in app — signed by \"Home Lab Issuing CA\""
+    },
+    {
+      "ts": 1794135330,
+      "kind": "Warn",
+      "category": "revoke",
+      "msg": "Revoked \"grafana.home.lan\" — Key compromised"
+    }
+  ]
+}
