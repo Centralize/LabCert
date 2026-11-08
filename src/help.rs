@@ -79,14 +79,10 @@ fn code_block(ui: &mut egui::Ui, p: &Pal, text: &str) {
         .inner_margin(egui::Margin::same(10))
         .show(ui, |ui| {
             ui.set_width(ui.available_width());
-            ui.horizontal(|ui| {
-                ui.add(egui::Label::new(RichText::new(text).monospace().color(p.text)).wrap());
-                ui.with_layout(egui::Layout::right_to_left(Align::Min), |ui| {
-                    if ui.small_button("Copy").clicked() {
-                        ui.ctx().copy_text(text.to_string());
-                    }
-                });
-            });
+            ui.add(egui::Label::new(RichText::new(text).monospace().color(p.text)).wrap());
+            if ui.small_button("Copy").clicked() {
+                ui.ctx().copy_text(text.to_string());
+            }
         });
 }
 
@@ -194,12 +190,16 @@ impl App {
     pub fn help_page(&mut self, ui: &mut egui::Ui, _st: &mut Store, p: &Pal) {
         let docs = [("User guide", USER_GUIDE, "LabCert-User-Guide.md"), ("Installation", INSTALL, "LabCert-Installation.md")];
         let (_, doc, file) = docs[self.help_tab.min(1)];
-        egui::Panel::left("help_toc")
-            .exact_size(250.0)
-            .resizable(false)
-            .show_separator_line(false)
-            .frame(egui::Frame::new().inner_margin(egui::Margin { left: 0, right: 14, top: 0, bottom: 0 }))
-            .show(ui, |ui| {
+        let total = ui.available_width();
+        let height = ui.available_height();
+        let toc_w = 236.0;
+        let gap = 14.0;
+        let doc_w = (total - toc_w - gap).max(300.0);
+        let origin = ui.cursor().min;
+        let toc_rect = egui::Rect::from_min_size(origin, egui::vec2(toc_w, height));
+        let doc_rect = egui::Rect::from_min_size(origin + egui::vec2(toc_w + gap, 0.0), egui::vec2(doc_w, height));
+        ui.allocate_rect(egui::Rect::from_min_size(origin, egui::vec2(total, height)), egui::Sense::hover());
+        ui.scope_builder(egui::UiBuilder::new().max_rect(toc_rect).layout(egui::Layout::top_down(Align::Min)), |ui| {
                 card(ui, p, |ui| {
                     ui.horizontal(|ui| {
                         for (i, (name, _, _)) in docs.iter().enumerate() {
@@ -222,7 +222,8 @@ impl App {
                     }
                 });
             });
-        egui::CentralPanel::default().frame(egui::Frame::new()).show(ui, |ui| {
+        ui.scope_builder(egui::UiBuilder::new().max_rect(doc_rect).layout(egui::Layout::top_down(Align::Min)), |ui| {
+            ui.set_width(doc_w);
             let mut area = egui::ScrollArea::vertical().id_salt(("help", self.help_tab)).auto_shrink([false, false]);
             if self.help_jump == Some(usize::MAX) {
                 area = area.vertical_scroll_offset(0.0);
@@ -230,7 +231,6 @@ impl App {
             }
             area.show(ui, |ui| {
                 card(ui, p, |ui| {
-                    ui.set_max_width(900.0);
                     render(ui, p, doc, &mut self.help_jump);
                 });
                 ui.add_space(20.0);
